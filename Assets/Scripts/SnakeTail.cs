@@ -15,6 +15,8 @@ public class SnakeTail : MonoBehaviour
 
     public Dissolve Dissolve;
 
+    public Sounds Sounds;
+
     private void Start()
     {
         Circles.Add(SnakeHead);
@@ -39,6 +41,7 @@ public class SnakeTail : MonoBehaviour
         if (other.gameObject.CompareTag("Food"))
         {
             Destroy(other.gameObject);
+            Sounds.PlayChewingSound();
 
 
             if (other.gameObject.TryGetComponent<Food>(out Food food))
@@ -54,12 +57,14 @@ public class SnakeTail : MonoBehaviour
                     }
                 }
             }
-        }
+            Sounds.PlayChewingSound();
 
+        }
         if (other.gameObject.CompareTag("Block"))
         {
             Destroy(other.gameObject);
             Dissolve.Gone();
+           
             
             if (other.gameObject.TryGetComponent<Block>(out Block block))
             {   
@@ -85,6 +90,7 @@ public class SnakeTail : MonoBehaviour
 
                 }
             }
+            Sounds.PlaySound();
         }
     }
 
