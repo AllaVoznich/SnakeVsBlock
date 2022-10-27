@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7380141782596954660}
   - component: {fileID: 7380141782596954659}
   - component: {fileID: 7380141782596954658}
+  - component: {fileID: -5696621745319832073}
   m_Layer: 0
   m_Name: SnakePrefab
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7380141782596954656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.827816, y: 0.5, z: 33.066025}
+  m_LocalPosition: {x: 0, y: 0.5, z: 15.795197}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9263c575de60cd344ae250260c42b4c6, type: 2}
+  - {fileID: 2100000, guid: 75ee05efc0b57124da3ad38e1fdc9c17, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -111,3 +112,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xRange: 3.4
+--- !u!114 &-5696621745319832073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7380141782596954656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9f7c8a1211c4c4996b07215af7e739, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

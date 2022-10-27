@@ -319,6 +319,7 @@ MonoBehaviour:
   FoodPrefab: {fileID: 4577519704207197725}
   Finish: {fileID: 8716155073367267294}
   IsEaten: 0
+  FoodValue: 0
   foodValue: {fileID: 8362252935131335898}
 --- !u!1 &6461637679637472437
 GameObject:

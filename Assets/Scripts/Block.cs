@@ -70,7 +70,7 @@ public class Block : MonoBehaviour
     public void SetColor(int value)
     { 
         transform.gameObject.GetComponent<Renderer>().material.color = Gradient.Evaluate(value / (float) MaxBlockValue);
-       // Debug.Log(Gradient.Evaluate(value / (float)MaxBlockValue));
+      
     }
 
 }

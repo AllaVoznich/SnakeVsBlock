@@ -13,13 +13,14 @@ public class SnakeTail : MonoBehaviour
 
     public SnakeMovement Snake;
 
-    private Transform circle;
+    public Dissolve Dissolve;
 
     private void Start()
     {
         Circles.Add(SnakeHead);
     }
-    private void FixedUpdate()
+
+       private void FixedUpdate()
     {
         if (Circles.Count>0)
         {
@@ -58,13 +59,15 @@ public class SnakeTail : MonoBehaviour
         if (other.gameObject.CompareTag("Block"))
         {
             Destroy(other.gameObject);
-
+            Dissolve.Gone();
+            
             if (other.gameObject.TryGetComponent<Block>(out Block block))
             {   
                 var BlockValue = block.BlockValue;
                 
                 if (!block.IsFaced)
-                {  
+                {
+
                     if (Circles.Count - BlockValue > 0)                                                 
                     {
                         block.IsFaced = true;
@@ -77,7 +80,7 @@ public class SnakeTail : MonoBehaviour
 
                     else 
                     {
-                       Snake.Die();
+                        Snake.Die();
                     }
 
                 }
@@ -97,6 +100,7 @@ public class SnakeTail : MonoBehaviour
 
     public void RemoveCircle(int value)
     {
+
         int index = Circles.Count - value - 1;                                                                  
         if (index > 0)
         {

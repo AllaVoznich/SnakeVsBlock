@@ -21,10 +21,9 @@ public class Game : MonoBehaviour
     }
 
     public State CurrentState { get; private set; }
-
     public void OnPlayerDied()
     {
-        if (CurrentState != State.Playing) return;
+       if (CurrentState != State.Playing) return;
 
         CurrentState = State.Loss;
         Movement.enabled = false;
@@ -41,8 +40,7 @@ public class Game : MonoBehaviour
         Movement.enabled = false;
         Debug.Log("You Won!");
         NextLevel.Setup(); 
-        LevelIndex++;
-
+        
     }
 
     public int LevelIndex
@@ -64,6 +62,4 @@ public class Game : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-
-
-}
+   }

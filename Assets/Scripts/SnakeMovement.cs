@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class SnakeMovement : MonoBehaviour
@@ -10,10 +11,10 @@ public class SnakeMovement : MonoBehaviour
     public float Sensetivity;
 
     public Game Game;
-
+    
     void Update()
     {
-        transform.Translate(Vector3.forward * Speed * Time.deltaTime);
+          transform.Translate(Vector3.forward * Speed * Time.deltaTime);
 
 
         if (Input.GetKey(KeyCode.D))
