@@ -14,10 +14,7 @@ public class Block : MonoBehaviour
 
     public bool IsFaced;
     public int BlockValue;
-
-   // private Transform RandomBlock;
-
-
+   
     public TextMeshPro blockValue;
 
 
@@ -73,4 +70,5 @@ public class Block : MonoBehaviour
       
     }
 
+  
 }
