@@ -17,6 +17,8 @@ public class SnakeTail : MonoBehaviour
 
     public Sounds Sounds;
 
+    public DestroyPS Effect;
+
     private void Start()
     {
         Circles.Add(SnakeHead);
@@ -62,16 +64,19 @@ public class SnakeTail : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Block"))
         {
+
             Destroy(other.gameObject);
             Dissolve.Gone();
-           
-            
+            Effect.DestroyEffect();
+
+
             if (other.gameObject.TryGetComponent<Block>(out Block block))
             {   
                 var BlockValue = block.BlockValue;
                 
                 if (!block.IsFaced)
                 {
+                    
 
                     if (Circles.Count - BlockValue > 0)                                                 
                     {
@@ -91,6 +96,7 @@ public class SnakeTail : MonoBehaviour
                 }
             }
             Sounds.PlaySound();
+           
         }
     }
 

@@ -482,6 +482,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368862368}
   m_CullTransparentMesh: 1
+--- !u!114 &406072604 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2790266488631632708, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+  m_PrefabInstance: {fileID: 6835634968544549144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741d97319caffca4780f8cebbce68096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1030,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.6609269, y: -0, z: -0, w: 0.7504503}
-  m_LocalPosition: {x: 0, y: 19.781479, z: 2.3843079}
+  m_LocalPosition: {x: 0, y: 20, z: 2.3843079}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2974,6 +2985,7 @@ MonoBehaviour:
   Snake: {fileID: 1980427157}
   Dissolve: {fileID: 1980427164}
   Sounds: {fileID: 1980427169}
+  Effect: {fileID: 406072604}
 --- !u!114 &1980427157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3134,6 +3146,58 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 902811208}
     m_Modifications:
+    - target: {fileID: 354187697529001021, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 354187697529001021, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_RenderMode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233683924685365256, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233683924685365256, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610677804351655445, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610677804351655445, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610677804351655445, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610677804351655445, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610677804351655445, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.834
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610677804351655445, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610677804351655445, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610677804351655445, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610677804351655445, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 7380141782596954656, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
       propertyPath: m_Name
       value: Snake
@@ -3194,5 +3258,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6301611030797983547, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 749d5fc9e8f15e547a36a87893f46798, type: 3}

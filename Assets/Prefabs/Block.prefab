@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 8352638511789308277}
   - component: {fileID: 5936385374036228271}
   - component: {fileID: 4201306734889330010}
-  - component: {fileID: 6471581225002737616}
+  - component: {fileID: 5950876853207824125}
   m_Layer: 0
   m_Name: Block
   m_TagString: Block
@@ -262,7 +262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8678534424979508380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.08, y: 0.5, z: 77}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -334,7 +334,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6471581225002737616
+--- !u!114 &5950876853207824125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -353,17 +353,17 @@ MonoBehaviour:
   blockValue: {fileID: 402216357835278015}
   Gradient:
     serializedVersion: 2
-    key0: {r: 0.7207903, g: 0.8455536, b: 0.9622642, a: 1}
-    key1: {r: 0, g: 0.14754105, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
+    key0: {r: 0.7524564, g: 0.81819904, b: 0.9339623, a: 1}
+    key1: {r: 0, g: 0.06212163, b: 1, a: 1}
+    key2: {r: 0.01196154, g: 0.06331366, b: 0.1981132, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 31997
-    ctime2: 64571
+    ctime1: 31804
+    ctime2: 65535
     ctime3: 0
     ctime4: 0
     ctime5: 0
